@@ -6,9 +6,9 @@ $(document).ready(function(){
     var phone = $("input#phone").val();
     var email = $("input#email").val();
 
-    $("div#storedcontacts:first-child").text(name);
-    $("div#storedcontacts:first-child").text(phone);
-    $("div#storedcontacts:first-child").text(email);
+    $("div.contact:first").text(name);
+    $("div.contact:first").text(phone);
+    $("div.contact:first").text(email);
 
     event.preventDefault();
   });
