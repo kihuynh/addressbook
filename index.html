@@ -11,7 +11,42 @@
   </head>
   <body>
     <div class="container">
+      <div id="newcontact">
+        <h3>New contact information:</h3>
+        <form id="add">
 
+          <!-- form - name section -->
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+
+          <!-- phone -->
+          <div class="form-group">
+            <label for="phone">Phone Number: </label>
+            <input id="phone" class="form-control" type="tel">
+          </div>
+
+          <!-- email -->
+          <div class="form-group">
+            <label for="email">E-mail: </label>
+            <input id="email" class="form-control" type="email">
+          </div>
+
+          <button type="submit" class="btn-dark" id="contactbutton">Save</button>
+        </form>
+      </div>
+
+      <div id="storedcontacts">
+        <div class="contact">
+          <!-- Contact name goes here -->
+          <p>Name: <span class="name"></span></p>
+          <div class="contactinfo">
+            <p>Phone: <span class="phone"></span></p>
+            <p>E-mail: <span class="email"></span></p>
+          </div>
+        </div>
+      </div>
 
     </div>
   </body>
