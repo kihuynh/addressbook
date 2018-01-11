@@ -1,15 +1,23 @@
 $(document).ready(function(){
   $("#add").submit(function(event) {
 
-    $("div#storedcontacts").append('<div class="contact"></div>');
     var name = $("input#name").val();
     var phone = $("input#phone").val();
     var email = $("input#email").val();
 
-    $("div.contact:first").text(name);
-    $("div.contact:first").text(phone);
-    $("div.contact:first").text(email);
+    $("ul").append('<li>Name: ' + name +'<br><div class="hidden">Phone:'+ phone +'<br>Email: '+ email +'</div></li>');
 
     event.preventDefault();
+    $("li").unbind().click(function() {
+      $(this).children("div").toggle();
+    });
+
   });
+
+
 });
+
+
+// <li>Name: asdf <br>
+// <span....>Phone: 231232 <br>
+// E-mail: asdf;l2@</span></li>
